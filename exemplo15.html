@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/exemplo4.css">
+</head>
+<body>
+    <div id="corpo" class="container">
+        <h1>Faça sua Compra</h1>
+
+        <br>
+        <form action="" method="">
+            <div class="row">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <div class="row">
+
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" name="nome" id="nome" autocomplete="off">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" name="Email" id="Email" autocomplete="off">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="Nascimento">Data de Nascimento</label>
+                            <input type="date" class="form-control" name="Nascimento" id="Nascimento">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="CPF">CPF</label>
+                            <input type="text" class="form-control" name="CPF" id="CPF" maxlength="14" placeholder="___.___.___-__">
+                        </div>                    
+
+                        <div class="form-group col-md-4">
+                            <label for="Telefone">Fone</label>
+                            <input type="text" class="form-control" name="Telefone" id="Telefone" maxlength="11">
+                        </div>
+                    </div>
+                    
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <div class="row">
+
+                        <div class="form-group col-md-7">
+                            <label for="Rua">Logradouro</label>
+                            <input type="text" class="form-control" name="Rua " id="Rua" autocomplete="off">
+                        </div>
+        
+                       <div class="form-group col-md-2">
+                           <label for="N">Nº</label>
+                           <input type="text" class="form-control" name="N " id="N" autocomplete="off">
+                       </div>
+                       
+                       <div class="form-group col-md-3">
+                           <label for="CEP">CEP</label>
+                           <input type="text" class="form-control" name="CEP" id="CEP" maxlength="14" >
+                       </div>
+        
+                       <div class="form-group col-md-8">
+                           <label for="Cidade">Cidade</label>
+                           <input type="text" class="form-control" name="Cidade " id="Cidade" autocomplete="off">
+                       </div>
+        
+                       <div class="form-group col-md-4">
+                           <label for="Estado">Estado</label>
+                           <select class="form-control" name="Estado" id="Estado">
+                               <option value="rn">Rio Grande do Norte</option>
+                               <option value="pr">Paraiba</option>
+                               <option value="ce">Ceará</option>
+                               <option value="pe">Pernambuco</option>
+                               <option value="ba">Bahia</option>
+                           </select>
+                       </div>
+
+                    </div>
+
+
+
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend>Dados de Pagamento</legend>
+                    <div class="row">
+
+                        <div class="form-group col-md-4">
+                            <label for="Cartão">Cartão</label>
+                            <select class="form-control" name="Cartão" id="Cartão">
+                                <option value="B" disabled>Bandeira</option> 
+                                <option value="rn">Bradesco</option>
+                                <option value="pr">Visa</option>
+                                <option value="ce">Master</option>
+                                <option value="pe">Hiper</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group col-md-4">
+                            <label for="numero">Número do Cartão</label>
+                            <input type="text" class="form-control" name="numero " id="numero" autocomplete="off">
+                        </div>
+    
+                        <div class="form-group col-md-4">
+                            <label for="CVS">CVS</label>
+                            <input type="text" class="form-control" name="CVS " id="CVS" autocomplete="off">
+                        </div>
+
+                        <div class="form-group col-md-8">
+                            <label for="numeroCart">Número Impresso do Cartão</label>
+                            <input type="text" class="form-control" name="numeroCart " id="numeroCart" autocomplete="off">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="Vencimento">Data de Vencimento</label>
+                            <input type="date" class="form-control" name="Vencimento" id="Vencimento">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <div class="row">
+                    <div>
+                        <button type="submit" class="btn btn-primary" >Cadastrar</button>
+                        <button type="reset" class="btn tbn-danger" >Limpar</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
