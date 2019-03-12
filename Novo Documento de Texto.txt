@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Última versão CSS compilada e minificada -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Tema opcional -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="col-xs-2 form-group">
+            <button class="btn btn-primary btn-block">
+                    <i class="fas fa-save"></i>
+                Salvar
+            </button>
+        </div>
+
+        <img src="imagens/me2.jpg" class="img-responsive" alt="">
+
+        <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img src="imagens/me.jpg" class="img-responsive" alt="...">
+                    <div class="caption">
+                      <h3>Paisagem</h3>
+                      <p>Eu sei lá</p>
+                      <p><a href="#" class="btn btn-primary" role="button">Button</a> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+
+    
+    <!-- Última versão JavaScript compilada e minificada -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
