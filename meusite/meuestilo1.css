@@ -1,0 +1,41 @@
+h2{
+    color: darkturquoise;
+    text-decoration: rgb(255, 51, 0) underline;
+    text-align: center;
+    border: 2px dotted;
+    border-color: black;
+    border-radius: 25px;
+    background-color: aquamarine;
+}
+
+p{
+    color: rgb(18, 230, 18);
+    font-style: italic;
+    text-align: right;
+    font-family: century;
+}
+
+body{ 
+    background-image: url(../Ex-VScode/concluido.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+table{
+    font-family: calibri;
+    font-size: 14pt;
+}
+
+.a1{
+    background-color: rgb(79, 129, 189);
+    color: white;
+    font-weight: bold;
+}
+
+.a2{
+    background-color: rgb(208, 216, 232);
+}
+
+.a3{
+    background-color: rgb(233, 237, 244);
+}
