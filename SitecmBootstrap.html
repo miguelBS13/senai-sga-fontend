@@ -4,7 +4,20 @@
         <meta charset="UTF-8">
         <title>Eleições Senai</title>
     </head>
-    <body style="background-image: url(me2.jpg); background-repeat: no-repeat;background-size: 2000px 500px ; background-position: center">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Última versão CSS compilada e minificada -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Tema opcional -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <body>
         <img src="img/senai.jpg" width="330" height="120">
         <center>
         <form>
@@ -18,30 +31,17 @@
                 <td>
                     <h4>Dados de Identificação:</h4>
 
-                    <label for="nome">
-                        Nome: &nbsp;
-                    </label>
-                    <input 
-                        type="text"
-                        name="nome"
-                        id="nome"
-                        size="60"
-                        maxlength="40"
-                        autocomplete="off">
                     
-                    <br><br>
-                    <label for="email">
-                        E-mail: &nbsp;
-                    </label>
-                    <input 
-                        type="email" 
-                        name="email" 
-                        id="email"
-                        size="60" 
-                        maxlength="30"
-                        autocomplete="off">
-                    
-                    <br><br>
+                          <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome">
+                          </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Endereço de e-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                     
                     <label for="CPF">
                         CPF: &nbsp;&nbsp;&nbsp;
                     </label>
@@ -107,6 +107,23 @@
                         <option value="jkl">Yngride</option>
                     </select>
 
+                    <div class="row">
+                            <div class="col-lg-6">
+                              <div class="input-group">
+                                <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                  </ul>
+                                </div><!-- /btn-group -->
+                                <input type="text" class="form-control" aria-label="...">
+                              </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                            
                     <br><br>
                     Escolha Categoria:<br>
                     <label for="lider">
@@ -165,12 +182,7 @@
 
                     <br><br>
                     Justifique seu Voto: <br>
-                    <textarea 
-                        name="descrição" 
-                        id="descrição" 
-                        cols="70" rows="7"
-                        placeholder="Justificativa..."
-                    ></textarea>
+                    <textarea class="form-control" rows="3"></textarea>
                    
                     <br>
                     <img style="float:right" src="img/senai.jpg" width="150" height="45">
@@ -182,5 +194,12 @@
         </table>
     </form>
     </center>
+
+    <!-- jQuery (tem q ser colocado antes do bootstrap 'script') -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Última versão JavaScript compilada e minificada -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -17,22 +17,6 @@ html, body{
     background-color: darkorange;
   }
 
-  @media screen and (max-width: 1200px){
-    #pagina{
-        width: 100%;
-        height: 100%;
-    }
-    #conteudo{
-        width: 60%;
-        height: 100%;
-        float: left;
-    }
-    #menulateral{
-        width: 20%;
-        height: 100%;
-        float: left;
-    }
-}
 
 @media screen and (max-width: 900px){
     #pagina{
