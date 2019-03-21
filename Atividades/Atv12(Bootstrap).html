@@ -1,0 +1,150 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Eleições Senai</title>
+    </head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/Ex12.css">
+
+    <!-- Última versão CSS compilada e minificada -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Tema opcional -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <body>
+
+        <header >
+            <img  src="img/senai.jpg" width="330" height="120">
+            &emsp;&emsp;&emsp; Formulário de Pesquisa Eleitoral
+        </header>   
+        <br><br>
+
+        <div id="corpo" class="container">
+        <form>
+
+        <fieldset>
+            <legend>Dados de Identificação:</legend>
+            <div class="row">
+                    
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Endereço de e-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" autocomplete="off">
+                </div>
+                     
+                <div class="form-group col-md-2">
+                    <label for="CPF">CPF</label>
+                    <input type="text" class="form-control" name="CPF" id="CPF" maxlength="14" placeholder="___.___.___-__" autocomplete="off">
+                </div>   
+
+                <div class="form-group col-md-2"></div>
+
+                <div class="form-group col-md-3">
+                   <label for="Nascimento">Data de Nascimento</label>
+                   <input type="date" class="form-control" name="Nascimento" id="Nascimento">
+                </div>
+
+                <div class="form-group col-md-2"></div>
+
+                <div class="form-group col-md-3">
+                    <h4>Sexo: </h4>
+                    <label class="radio-inline"> 
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Outro
+                    </label>
+                </div>
+
+
+                
+                <div class="form-group">
+                    <label for="Login">Login</label>
+                    <input type="text" class="form-control" name="Login" id="Login" placeholder="Login" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword3">Senha</label>  
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Intenções de Voto:</legend>
+            <div class="row">
+                <label for="alunos">Em qual Aluno deseja Votar? </label>
+                <select class="form-control">
+                    <option disabled selected>Selecione Aluno...</option>
+                    <option >Railson</option>
+                    <option >Paula</option>
+                    <option >Paulo</option>
+                    <option >Wesley</option>
+                    <option >Marcos</option>
+                    <option >Miguel</option>
+                    <option >Lindson</option>
+                    <option >Rhafael</option>
+                    <option >Juliana</option>
+                    <option >Yngride</option>
+                </select>
+
+                <br>
+                <label for="ckeckbox">Escolha Categoria:</label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Líder
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Vice-Líder
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> Secretário
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox4" value="option4"> Humorista
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox5" value="option5"> Estiloso
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox6" value="option6"> Tímido
+                </label> 
+
+            <br><br>
+                <label for="text">Justifique seu voto:</label>
+                <textarea class="form-control" rows="3"></textarea>
+
+                <br>
+                <img style="float:right" src="img/senai.jpg" width="150" height="45">
+                <button type="submit" class="btn btn-primary" >Cadastrar</button>
+                <button type="reset" class="btn tbn-danger" >Limpar</button>
+
+            </div>
+        </fieldset>     
+    </form>
+   
+
+    <!-- jQuery (tem q ser colocado antes do bootstrap 'script') -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Última versão JavaScript compilada e minificada -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</div>
+    </body>
+</html>

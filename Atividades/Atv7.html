@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhe Conosco</title>
+</head>
+<body style="background-color: rgb(250, 250, 250)">    
+
+    <img  style="float:left" src="Img/conosco.jpg" width="900" height="200">
+    <img style="float:right" src="img/senai.jpg" width="1000" height="215">
+    <img style="float: right;" src="img/vaga.jpg" width="1000" height="500">
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <p>
+        
+                <label for="nome">
+                   Nome: &nbsp;
+                </label>
+                <input 
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    size="82"
+                    maxlength="40"
+                    autocomplete="off">
+
+        <img style="float:right" src="img/ft.png" width="150" height="180"> 
+
+        <br><br>
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" name="nascimento" id="nascimento">
+
+        <br><br>
+        <label for="Endereço">
+            Endereço:
+        </label>
+        <input 
+            type="text"
+            name="Endereço"
+            id="Endereço"
+            size="30"
+            maxlength="30"
+            placeholder="Rua..."
+            autocomplete="off">
+
+        <label for="numero">
+            Nº:
+        </label>
+        <input 
+            type="text"
+            name="numero"
+            id="numero"
+            size=2
+            maxlength="10"
+            autocomplete="off">
+        
+        
+        <label for="Cidade">
+            Cidade: &nbsp;
+        </label>
+        <input 
+            type="text"
+            name="Cidade"
+            id="Cidade"
+            size="25"
+            maxlength="30"
+            placeholder="Cidade/Bairro..."
+            autocomplete="off">
+        
+        <br><br>
+        <label for="CPF">
+            CPF: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+        <input 
+            type="text" 
+            name="CPF" 
+            id="CPF" 
+            size="17" 
+            placeholder="___.___.___-__"
+            maxlength="14">
+        
+        <br><br>
+        <label for="email">E-mail: &nbsp;</label>
+        <input type="email" name="email" id="email" size="60" autocomplete="off">
+
+        
+
+    <h4 align="right">Sua Foto</h4> 
+    </p>
+
+    <hr>
+    
+    <big> Objetivo:</big> <br>
+    <textarea style="position: relative; left: 150px;" 
+    name="Objetivo" 
+    id="Objetivo" 
+    cols="70" 
+    rows="5"
+    placeholder="Por que quer uma vaga?"
+    ></textarea>
+                                      
+    <br><big> Formações:</big> <br>
+    <textarea style="position: relative; left: 150px;" 
+    name="Formações" 
+    id="Formações" 
+    cols="70" 
+    rows="5"
+    placeholder="Informe suas formações e o ano que concluiu..."
+    ></textarea>
+    
+    <br><big> Experiências Profissionais:</big> <br>
+    <textarea style="position: relative; left: 150px;" 
+    name="Experiências" 
+    id="Experiências" 
+    cols="70" 
+    rows="5"
+    placeholder="Informe os loacais que já trabalhou, o ano em que trabalhou, e o cargo que ocupava..."
+    ></textarea>
+    
+    <br><br>
+    <label for="avaliacao">O quanto você se auto-avalia profissionalmente? </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="range" name="avaliacao" id="avaliacao" value="0" min="0" max="5">
+    
+    <p>
+    <label for="evento">Em que dia e hora você está realizando essa inscrição?</label><br>
+    <input type="datetime-local" name="evento" id="evento">
+    </p>
+
+    
+    <button type="submit" style="float: right; position: relative; right: 50px;"><big><big><big><big>Enviar</big></big></big></big></button>
+    
+    
+</body>
+</html>
