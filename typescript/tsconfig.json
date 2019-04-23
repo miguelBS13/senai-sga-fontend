@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "es5"
+    }
+}
+
+// ctrl + shift + P
+// ctrl + shift + B
+// Watch
