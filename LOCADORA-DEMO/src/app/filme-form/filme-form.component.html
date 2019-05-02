@@ -1,27 +1,41 @@
-<div class="form-group">
-  <label for="titulo">Título</label>
-  <input 
-    type="text" 
-    name="titulo" 
-    id="titulo" 
-    class="form-control"
-    placeholder="Título do filme"
-    autofocus
-  />
-
-  <div class="form-group" style="margin-top: 20px">
-      <label for="genero">Gênero</label>
-      <input 
-        type="text" 
-        name="genero" 
-        id="genero" 
-        class="form-control"
-        placeholder="Gênero do filme"
-      />
-
-</div>
-<button class="btn btn-primary">
-    <i class="fas fa-share-square">
-      Adicionar
-    </i>
-</button>
+<form >
+  <div class="form-group">
+    <label for="titulo">Título</label>
+    <input type="text" 
+      name="titulo" 
+      id="titulo" 
+      [(ngModel)]="titulo"
+      class="form-control"
+      placeholder="Título do filme..."
+      autofocus
+    />
+  </div>
+  
+    <div class="form-group" style="margin-top: 20px">
+        <label for="genero">Gênero</label>
+        <input 
+          type="text" 
+          name="genero" 
+          id="genero"
+          [(ngModel)]="genero"
+          class="form-control"
+          placeholder="Gênero do filme..."
+        />
+  
+  </div>
+  
+  <div class="form-group">
+      <div class="row">
+          <div class="col-6">
+            <button type="button" class="btn btn-primary btn-block" (click)="adicionarFilme()" [disabled]="isVazio()">
+                <i class="fas fa-share-square"></i> Adicionar
+            </button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn btn-danger btn-block" (click)="limpar()">
+              <i class="fas fa-eraser"></i> Limpar
+            </button>
+          </div>
+        </div>
+      </div>
+</form>

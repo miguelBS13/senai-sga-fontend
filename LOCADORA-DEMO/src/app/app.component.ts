@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  titulo = 'Locadora Senai';
+
+  filmes = [];
+
+
+  adicionar(filme){
+    this.filmes.push(filme);
+  }
+
 }

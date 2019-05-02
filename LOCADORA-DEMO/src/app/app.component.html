@@ -1,10 +1,10 @@
 <div class="container">
 
-  <app-filme-form></app-filme-form>
+  <app-filme-form (filmeAdicionado)="adicionar($event);"></app-filme-form>
 
-  <div class="row" style="margin-top: 30px">
-    <div class="col-2">
-      <app-filme-card></app-filme-card>
+  <div class="row" style="margin-top: 30px" >
+    <div class="col-2" *ngFor="let filme of filmes" style="margin-bottom: 20px">
+      <app-filme-card [filme]="filme"></app-filme-card>
     </div>
   </div>
 
