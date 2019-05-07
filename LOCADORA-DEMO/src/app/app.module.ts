@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FilmeFormComponent } from './filme-form/filme-form.component';
 import { FilmeCardComponent } from './filme-card/filme-card.component';
+import { CampoColoridoDirective } from './campo-colorido.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FilmeFormComponent,
-    FilmeCardComponent
+    FilmeCardComponent,
+    CampoColoridoDirective
   ],
   imports: [
     BrowserModule,
